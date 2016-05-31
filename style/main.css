@@ -1,0 +1,392 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*公用*/
+.comWidth {
+	width:1200px;
+	margin:0 auto;
+}
+/*头部*/
+.header {
+	background-image:url(../images/header_02.jpg);
+	background-repeat:repeat-x;
+	
+}
+/*头部top*/
+.top_bar {
+	height:30px;
+}
+.top_bar li {
+	float:left;
+	line-height:30px;
+	font-size:12px;
+}
+.top_left li {
+	margin-right:15px;
+}
+.top_right li {
+	margin-left:15px;
+}
+.top_bar li a {
+	color:#c1cdec;
+}
+.top_bar li a:hover {
+	color:red;
+}
+/*头部logo*/
+.logo_bar {
+	background:url(../images/logo_bg.png) right 10px no-repeat;
+	padding:22px 0;
+}
+.search {
+	position:relative;
+	width:240px;
+	height:32px;
+	margin-top:30px;
+	margin-right:10px;
+}
+.search .text {
+	background:url(../images/txt.png);
+	width:200px;
+	height:32px;
+	line-height:32px;
+	padding-right:30px;
+	padding-left:10px;
+	border:0;
+	position:absolute;
+	top:0;
+	left:0;
+	background-color:transparent;
+	color:#fff;
+}
+.search .but {
+	position:absolute;
+	background:url(../images/but.png);
+	width:40px;
+	height:32px;
+	border:0;
+	left:200px;
+	padding:0 6px;
+	background-color:transparent;
+}
+/*头部导航栏*/
+.nav_bar ul li {
+	float:left;
+}
+.nav_bar a {
+	padding:0 40px;
+	line-height:46px;
+	color:#fff;
+	font-size:16px;
+
+}
+.nav_bar li{
+	position:relative;
+	}
+.nav_bar li:hover,
+.nav_bar li:hover .subNav{
+	background:#073F7B;
+	visibility:visible;}
+	/*二级导航*/
+.subNav{
+	position:absolute;
+	z-index:1;
+	width:160px;
+	padding:0 15px;
+	text-align:left;
+	top:46px;
+	visibility:hidden;
+	}
+
+.subNav li{
+	clear:both;
+	text-align:left;
+	width:100%;
+	}
+.subNav li a:hover{
+	color:#3c98ff;}
+.subNav li a{
+	line-height:38px;
+	padding:0;
+	color:#fff;
+	font-size:14px;
+	text-align:left;}
+
+/*banner部分*/
+.banner{
+	position:relative;
+	height:396px;
+	width:100%;
+	overflow:hidden;}
+.bd li{
+	float:left;}
+.bd img{
+	height:396px;}
+.hd{
+	position:absolute;
+	width:1200px;
+	height:13px;
+	bottom:20px;
+	text-align:center;}
+.hd li{
+	border-radius:100%;
+	width:11px;
+	height:11px;
+	background:#FFC600;
+	display:inline-block;
+	margin:0 6px;}
+.hd .on{
+	background:#fff;}
+.pre{
+	}
+/*头条新闻*/
+.ttNews{
+	padding:10px;}
+.tt{
+	color:#1c1c1c;
+	font-size:22px;
+	line-height:66px;
+	}
+.tt a{
+	background:url(../images/more_03.jpg) no-repeat;
+	line-height:29px;
+	margin:26px 1px 0 0;
+	float:right;
+	font-size:12px;
+	padding:0 20px 0 30px;
+	color:#fff;}
+/*图片导航*/
+.picScroll{
+	width:1340px;
+	margin-bottom:25px;
+	padding-bottom:15px;}
+.picScroll .pre,
+.picScroll .next{
+	width:43px;
+	height:205px;
+	}
+.pre{
+	float:left;
+	background:url(../images/but_l.png) center 62px no-repeat;}
+.next{
+	float:right;
+	background:url(../images/but_r.png) center 62px no-repeat;}
+.bd{
+	width:1200px;
+	margin:0 auto;
+	overflow:hidden;}
+.temp_comWidth{
+	width:1233px;
+	position:relative;}
+.picScroll ul{
+	overflow:hidden;}
+.picScroll li{
+	float:left;
+	width:376px;
+	margin-right:35px;
+	text-align:center;}
+.picScroll img{
+	width:376px;
+	height:225px;}
+.picScroll dl{
+	margin-top:20px;}
+.picScroll dt{
+	float:left;
+	height:68px;
+	width:67px;
+	color:#7d7d7d;}
+.picScroll dt h3{
+	background:#004ea1;
+	color:#fff;
+	line-height:46px;
+	font-size:28px;}
+.picScroll dd{
+	float:right;
+	width:280px;
+	text-align:left;}
+.picScroll dd h3 a{
+	font-size:15px;
+	color:#333;
+	line-height:26px;
+	margin-bottom:5px;
+	display:block;
+	}
+.picScroll dd h3 a:hover{
+	color:#004ea1;}
+.picScroll dd p a{
+	font-size:12px;
+	color:#777;
+	line-height:24px;}
+.picScroll dd p a:hover{
+	color:#333;}
+
+/*主体部分*/
+/*main左边*/
+
+.main_fl{
+	width:762px;
+	overflow:hidden;}
+.tz{
+	color:#1c1c1c;
+	font-size:22px;
+	line-height:51px;
+	padding:0 10px 0 5px;
+	border-bottom:#e0e9f4 solid 1px;
+	display:block;}
+.tz a{
+	font-size:12px;
+	color:#666;
+	float:right;
+	line-height:60px;}
+.main_fl li{
+	font-size:14px;
+	padding:11px 0;
+	}
+.main_fl li span{
+	font-family: Georgia;
+    font-size: 16px;
+		border-right:1px solid #ccc;
+		width:147px;
+		padding:0 0 0 5px;
+		display:inline-block;
+		color:#999;
+		margin:0 1px 0 5px;}
+.main_fl li a{
+	    color: #333;
+    padding-left: 30px;}
+
+		
+/*main右边*/
+.main_fr{	
+	width:410px;
+	}
+	/*盒子一*/
+.r_box{
+	padding:20px;
+	background:#F5F5F5;
+/*	height:398px;	*/
+	margin-bottom:10px;
+	}
+.r_box ul li a{
+	color:#333;
+	font-size:14px;}
+.r_top{
+	padding-bottom:20px;
+	overflow:hidden;
+}
+.r_top img{
+	float:left;}
+.r_top .r{
+	overflow:hidden;
+	width:210px;
+	float:right;}
+.r_top ul li{
+	line-height:27px;
+	border-bottom:#d0d0d0 1px dashed;}
+.r_top ul .no{
+	border-bottom:#d0d0d0 0px dashed;}
+.r_bottom li{
+	line-height:26px;
+	padding:8px 0;
+	border-top:1px #d0d0d0 dashed;}
+	/*盒子二*/
+
+.r_box .jd{
+	line-height:26px;
+	font-size:18px;
+	display:block;
+	}
+.r_box .jd a{
+	color:#333;}
+.r_box .xbt{
+	line-height:28px;
+	background:#adb9c6;
+	font-size:12px;
+	margin:12px 0;
+	padding-left:5px;
+	display:block;
+	}
+.r_box .xbt a{
+	color:#fff;}
+.r_box p{
+	    color: #333;
+    font-size: 12px;
+    line-height: 26px;}
+.r_box p a{
+	color:#004ea1;}
+.r_box p a:hover{
+	color:red;}
+.main a:hover{
+	color:#004ea1;}
+	/*友情链接*/
+.frLink{
+	position:relative;}
+.fl_t{
+	border-bottom:3px solid #004ea1;
+	}	
+.frLink ul{
+	padding:20px 0;
+	width:100%;
+	overflow:hidden;
+	}
+.frLink ul li{
+	float:left;
+	margin-right:27px;}
+.frLink ul li img{
+	width:278px;
+	height:69px;}
+.frLink ul .no{
+	margin:0;}
+/*foot部分*/
+.footer{
+	background:url(../images/foot_bg_03.jpg);}
+.f_cont{
+	padding:50px 0 42px 0;}
+.f_cont .foot_l{
+	width:460px;
+	}
+.f_cont a:hover{
+	color:#e75b1b;}
+.foot_l p{
+	font-size:18px;
+	color:#fff;
+	margin:10px 10px 10px 0;}
+.foot_l ul{
+	width:425px;}
+.foot_l ul li{
+	line-height:36px;
+	margin-right:50px;
+	display:inline;}
+.foot_l ul li a{
+    color: #a6c4df;
+    font-size: 13px;}
+.foot_c{
+	border-left:1px #3d6998 solid;
+	border-right:1px #3d6998 solid;
+	padding:35px 80px;}
+.foot_r{
+	padding:0 90px;
+	}
+.foot_r img{
+	width:102px;
+	height:102px;}
+.foot_r p{
+	    text-align: center;
+    line-height: 36px;
+    font-size: 12px;
+    color: #fff;}
+.copy{
+	background:#001f41;
+	font-size:12px;
+	color:#fff;
+	}
+.copy p{text-align:center;
+	line-height:40px;}
+.copy p img{
+	display:block;
+	float:left;
+	}
+.copy p a{
+	display:inline-block;
+	font-size:12px;
+	color:#fff;height:20px;line-height:20px;}
