@@ -137,8 +137,17 @@
 	margin:0 6px;}
 .hd .on{
 	background:#fff;}
-.pre{
+.banner .pre{
+	position:absolute;
+	width:280px;
+	height:396px;
+	background-image:url(../images/slideshow.png);
 	}
+.backbg{
+	position:absolute;
+	left:-140px;
+	width:140px;
+	height:396px;}
 /*头条新闻*/
 .ttNews{
 	padding:10px;}
@@ -157,20 +166,35 @@
 	color:#fff;}
 /*图片导航*/
 .picScroll{
+	position:relative;
 	width:1340px;
 	margin-bottom:25px;
-	padding-bottom:15px;}
+	padding-bottom:15px;
+	cursor: pointer;}
 .picScroll .pre,
 .picScroll .next{
 	width:43px;
 	height:205px;
+	display: none;
+	/*visibility: hidden;*/
 	}
+/*.picScroll .pre:hover,*/
+/*.picScroll .next:hover{*/
+	/*visibility: visible;*/
+/*}*/
 .pre{
-	float:left;
+	position: absolute;
+	left: 0;
 	background:url(../images/but_l.png) center 62px no-repeat;}
 .next{
+	position: absolute;
 	float:right;
+	right: 0;
 	background:url(../images/but_r.png) center 62px no-repeat;}
+.picScroll:hover .pre,
+.picScroll:hover .next{
+	display: block;
+}
 .bd{
 	width:1200px;
 	margin:0 auto;
@@ -179,7 +203,12 @@
 	width:1233px;
 	position:relative;}
 .picScroll ul{
-	overflow:hidden;}
+	position: relative;
+	overflow:hidden;
+    width:4932px; /*一共12张图片*/
+	/*z-index: -99;*/
+}
+
 .picScroll li{
 	float:left;
 	width:376px;
