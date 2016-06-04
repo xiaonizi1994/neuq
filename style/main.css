@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 
 /*公用*/
@@ -167,7 +167,7 @@
 /*图片导航*/
 .picScroll{
 	position:relative;
-	width:1340px;
+	width:100%;
 	margin-bottom:25px;
 	padding-bottom:15px;
 	cursor: pointer;}
